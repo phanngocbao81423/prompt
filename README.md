@@ -1,16 +1,16 @@
 # Prompt Skill
 
-这是一个按用途分类的提示词仓库。每个提示词作为一个可独立调用的 Skill 保存，具体版本放在该 Skill 的 `prompts/` 目录中。
+按使用场景分类的提示词库。[SKILL.md](SKILL.md) 是统一入口：根据任务选择合适的提示词，再读取对应的 Markdown 文件。
 
-## 目录
+## 提示词目录
 
-| 分类 | Skill | 用途 | 当前版本 |
+| 场景分类 | 提示词类型 | 适用任务 | 文件 |
 | --- | --- | --- | --- |
-| learning（学习与讲解） | [explain-complex-concepts](skills/learning/explain-complex-concepts/SKILL.md) | 循序渐进地讲解陌生、复杂的概念 | [structured-concept-explanation-v1.md](skills/learning/explain-complex-concepts/prompts/structured-concept-explanation-v1.md) |
+| learning（学习与讲解） | 系统化讲解复杂概念 | 从零理解陌生概念，建立知识关联并检验理解 | [explain-complex-concepts.md](prompts/learning/explain-complex-concepts.md) |
 
-## 组织约定
+## 整理规则
 
-- 按用途在 `skills/` 下分类；每个 Skill 单独建目录。
-- `SKILL.md` 描述适用场景、调用方式，并指向当前采用的提示词版本。
-- 原始提示词存放在该 Skill 的 `prompts/` 目录；新版本新增 Markdown 文件，不覆盖旧版本。
-- 文件名说明具体用途，并以 `-v1.md`、`-v2.md` 等后缀标明版本；更新当前版本时同步修改 `SKILL.md` 和本目录。
+- 按使用场景在 `prompts/` 下分类，每种提示词类型使用一个 Markdown 文件。
+- 文件名直观描述用途，例如 `explain-complex-concepts.md`；不添加版本后缀。
+- 新增类型时，先选择合适的场景分类，再更新上方目录和根目录的 `SKILL.md`。
+- 同一类型的内容改进直接编辑对应文件；需要区分用途时，新建名称清晰的类型文件。
