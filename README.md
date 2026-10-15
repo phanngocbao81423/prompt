@@ -7,6 +7,7 @@
 | 场景分类 | 提示词类型 | 适用任务 | 文件 |
 | --- | --- | --- | --- |
 | learning（学习与讲解） | 系统化讲解复杂概念 | 从零理解陌生概念，建立知识关联并检验理解 | [explain-complex-concepts.md](prompts/learning/explain-complex-concepts.md) |
+| interface-design（界面设计） | 通用操作面板设计 | 设计或改造业务操作面板、控制台及多步骤操作页面 | [design-operation-panels.md](prompts/interface-design/design-operation-panels.md) |
 
 ## 整理规则
 
